@@ -1,0 +1,52 @@
+.btn {
+	border-radius: 15px;
+	border-style: none;
+	background-color: #0C5F56;
+	color:  aliceblue;
+	margin: 10px;
+	padding: 5px;
+	box-shadow: none;
+	display: flex;
+	text-transform: uppercase;
+	position: absolute;
+	top: 10vh;
+	left: 50vw;
+	transform: translateX(-50%);
+}
+.btn:hover {
+	animation-duration: 1.5s;
+	animation-name: rotate-btn;
+	animation-iteration-count: 1;
+}
+.btn-text {
+	margin: 0 5px 0 10px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+}
+/* .btn-text::after {
+	content: url('../icons/bi-arrow-down-left-circle.svg');
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+} */
+.btn-icon {
+	width: 16px;
+	height: 16px;
+	margin: 0 10px 0 5px;
+	align-self: center;
+}
+@keyframes rotate-btn {
+	from {
+		transform: translateX(-50%) rotateY(0deg);
+	}
+	47% {
+		transform: translateX(-50%) rotateY(180deg);
+	}
+	53% {
+		transform: translateX(-50%) rotateY(180deg);
+	}
+	to {
+		transform: translateX(-50%) rotateY(360deg);
+	}
+}
